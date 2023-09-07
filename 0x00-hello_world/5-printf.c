@@ -1,12 +1,11 @@
 #include<stdio.h>
 
 /**
- *main - entry point
- *Prints exactly with proper grammar, but the outcome is a piece of art
- *Followed by a new line, and
- *Return
+ * main - entry point
+ * Prints exactly with proper grammar, but the outcome is a piece of art,,
+ * followed by a new line.
+ * Return: 0
  */
-
 
 int main(void)
 {
