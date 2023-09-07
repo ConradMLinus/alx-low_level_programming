@@ -4,7 +4,7 @@
  *main - entry point
  *Prints exactly with proper grammar, but the outcome is a piece of art
  *Followed by a new line, and
- *Return (0)
+ *Return
  */
 
 
