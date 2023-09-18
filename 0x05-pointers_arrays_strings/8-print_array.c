@@ -7,7 +7,7 @@
  * @n: Number of elements to print
  */
 
-void print_array(int 8a, int n)
+void print_array(int *a, int n)
 {
 	if (a != NULL && n > 0)
 	{
