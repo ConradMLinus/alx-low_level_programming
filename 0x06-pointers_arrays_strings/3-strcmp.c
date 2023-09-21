@@ -11,23 +11,13 @@
  *         If s1 > s2, the positive difference of
  *         the first unmatched characters.
  */
+int _strcmp(char *s1, char *s2)
+{
+	while ((*s1 && *s2) && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+	}
 
-int _strcmp(char * s1, char * s2) {
-  while ( * s1 && ( * s1 == * s2)) {
-    s1++;
-    s2++;
-  }
-
-  return ( * (unsigned char * ) s1 - * (unsigned char * ) s2);
-}
-
-int main(void) {
-  char s1[] = "Hello";
-  char s2[] = "World!";
-
-  printf("%d\n", _strcmp(s1, s2));
-  printf("%d\n", _strcmp(s2, s1));
-  printf("%d\n", _strcmp(s1, s1));
-
-  return (0);
+	return (*s1 - *s2);
 }
