@@ -1,7 +1,6 @@
 #include "main.h"
 
 
-
 /**
  * _strncpy - copies up to n bytes from the src string to the dest string
  * @dest: the destination string
