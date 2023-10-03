@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #include <stdlib.h>
 
 /**
@@ -25,6 +26,9 @@ void simple_print_buffer(char * buffer, unsigned int size) {
   printf("\n");
 }
 
+
+char * create_array(unsigned int size, char c);
+
 /**
  * main - check the code for ALX School students.
  *
@@ -41,4 +45,23 @@ int main(void) {
   simple_print_buffer(buffer, 98);
   free(buffer);
   return (0);
+}
+
+
+char * create_array(unsigned int size, char c) {
+  if (size == 0) {
+    return NULL;
+  }
+
+  char * array = malloc(size * sizeof(char));
+
+  if (array == NULL) {
+    return NULL;
+  }
+
+  for (unsigned int i = 0; i < size; i++) {
+    array[i] = c;
+  }
+
+  return (array);
 }
