@@ -12,21 +12,18 @@
  */
 
 
+int main(void)
+{
+    char *buffer;
 
-char * create_array(unsigned int size, char c) {
-  if (size == 0) {
-    return NULL;
-  }
+    buffer = create_array(98, 'H');
+    if (buffer == NULL)
+    {
+        printf("Failed to allocate memory\n");
+        return (1);
+    }
 
-  char * array = malloc(size * sizeof(char));
-
-  if (array == NULL) {
-    return NULL;
-  }
-
-  for (unsigned int i = 0; i < size; i++) {
-    array[i] = c;
-  }
-
-  return (array);
+    simple_print_buffer(buffer, 98);
+    free(buffer);
+    return (0);
 }
